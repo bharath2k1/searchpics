@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import SearchBox from "./SearchBox";
 import ImageList from "./ImageList";
+import KEY from "./KEY";
 
 class App extends React.Component {
   state = { images: [] };
@@ -11,7 +12,7 @@ class App extends React.Component {
         query: term,
       },
       headers: {
-        Authorization: "Client-ID 1MF0nX1EerZBQB7LmpfeI7VazlZCPmfU8W6T8XlZoqo",
+        Authorization: KEY,
       },
     });
 
